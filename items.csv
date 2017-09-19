@@ -23,4 +23,4 @@ id,question,options,next
 22,please select address based on postcode,"confirm,edit","24,23"
 23,can you confirm lender address for the second charge?,"","24"
 24,account or reference number of a second charge,"","25"
-25,are you using new mortgage to repay the second charge?,"yes,no","end"
+25,are you using new mortgage to repay the second charge?,"yes,no","end,end"
