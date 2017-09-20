@@ -55,3 +55,8 @@ var listMake=function(config){
   }
   return arr;
 }
+module.exports.FAIL_ARR=FAIL_ARR;
+module.exports.ListItem=ListItem;
+module.exports.listItemSet=listItemSet;
+module.exports.listNext=listNext;
+module.exports.listMake=listMake
