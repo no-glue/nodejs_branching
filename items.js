@@ -50,7 +50,7 @@ var listMake=function(config){
   for(i=1;i<=len;i++){
     item=new ListItem();
     conf=config[i-1];
-    listItemSet(item,conf.id,conf.question,conf.option,conf.next);
+    listItemSet(item,conf.id,conf.question,conf.options,conf.next);
     arr[i]=item;
   }
   return arr;
