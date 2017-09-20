@@ -9,7 +9,7 @@
     "id": 2,
     "question": "how many mortgages do you currently have",
     "options": "m0,0",
-    "next": "3,end"
+    "next": "3,-1"
   },
   {
     "id": 3,
@@ -93,7 +93,7 @@
     "id": 16,
     "question": "is there second charge on the property to another lender?",
     "options": "yes,no",
-    "next": "17,end"
+    "next": "17,-1"
   },
   {
     "id": 17,
@@ -147,6 +147,6 @@
     "id": 25,
     "question": "are you using new mortgage to repay the second charge?",
     "options": "yes,no",
-    "next": "end,end"
+    "next": "-1,-1"
   }
 ]

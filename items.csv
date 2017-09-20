@@ -1,6 +1,6 @@
 id,question,options,next
 1,there's few indepth questions about your current mortgage,"","2"
-2,how many mortgages do you currently have,"m0,0","3,end"
+2,how many mortgages do you currently have,"m0,0","3,-1"
 3,did you get your current mortgage that you want to remortgage,"on your own,with someone else","4"
 4,is your current mortgage that you want to remortgage,"residential,buy to let","5"
 5,and do you?,"repay the mortgage each month,repay only the interest on your mortgage,a mix of both","7,6"
@@ -14,7 +14,7 @@ id,question,options,next
 13,do you currently have,"building insurance,contents insurance,life insurance,health insurance","14"
 14,do you intend to repay mortgage in currency other than sterling?,"yes,no","15,16"
 15,you have answered yes please tell us currency,"","16"
-16,is there second charge on the property to another lender?,"yes,no","17,end"
+16,is there second charge on the property to another lender?,"yes,no","17,-1"
 17,as there is a second charge please tell us the amount,"","18"
 18,and what is the interest rate?,"","19"
 19,on your second charge what is the remaining term?,"","20"
@@ -23,4 +23,4 @@ id,question,options,next
 22,please select address based on postcode,"confirm,edit","24,23"
 23,can you confirm lender address for the second charge?,"","24"
 24,account or reference number of a second charge,"","25"
-25,are you using new mortgage to repay the second charge?,"yes,no","end,end"
+25,are you using new mortgage to repay the second charge?,"yes,no","-1,-1"
