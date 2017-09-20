@@ -1,7 +1,7 @@
 var items=require("./items.js"),
+util=require('util'),
 stdin=process.stdin,
 stdout=process.stdout,
-format=util.format,
 chunks=[];
 
 stdin.resume();
@@ -14,5 +14,5 @@ stdin.on('end',function(){
   var json,config;
   json=chunks.join();
   config=JSON.parse(json);
-  stdout.write(format.apply("%s",JSON.stringify(config[0])) + "\n");
+  stdout.write(util.format("%s \n",JSON.stringify(config[0])));
 });
