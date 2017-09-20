@@ -31,7 +31,7 @@ var listNext=function(list,id,option){
   opt=item.optionsArr;
   next=item.nextArr;
   len=opt.length;
-  for(i=0;i<;i++){
+  for(i=0;i<len;i++){
     if(opt[i]==option){
       return parseInt(next[i]);
     }
