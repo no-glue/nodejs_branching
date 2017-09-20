@@ -23,3 +23,15 @@ var listNext=function(list,id,option){
   }
   return FAIL_ARR;
 }
+var listMake=function(config){
+  var len,arr,i,item,conf;
+  len=config.length;
+  arr=new Array(len);
+  for(i=0;i<len;i++){
+    item=new ListItem();
+    conf=config[i];
+    listItemSet(item,conf.id,conf.question,conf.option,conf.next);
+    arr[i]=item;
+  }
+  return arr;
+}
