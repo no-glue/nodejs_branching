@@ -47,7 +47,7 @@ var listMake=function(config){
   var len,arr,i,item,conf;
   len=config.length+1;
   arr=new Array(len);
-  for(i=1;i<=len;i++){
+  for(i=1;i<len;i++){
     item=new ListItem();
     conf=config[i-1];
     listItemSet(item,conf.id,conf.question,conf.options,conf.next);
