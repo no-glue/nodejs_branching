@@ -1,7 +1,17 @@
 var FAIL_ARR=-1;
+/*
+* Class ListItem
+* 
+* a single item in a list
+*/
 var ListItem = function(){
   var id,question,options,optionsArr,next,nextArr;
 }
+/*
+* function listItemSet
+* 
+* enable properties of a list item
+*/
 var listItemSet = function(item,id,question,options,next){
   item.id=id;
   item.question=question;
@@ -10,6 +20,11 @@ var listItemSet = function(item,id,question,options,next){
   item.next=next;
   item.nextArr=next.split(",");
 }
+/*
+* function listNext
+* 
+* return next item
+*/
 var listNext=function(list,id,option){
   var item,i,len,opt,next;
   item=list[id];
@@ -23,6 +38,11 @@ var listNext=function(list,id,option){
   }
   return FAIL_ARR;
 }
+/*
+* function listMake
+* 
+* make a list
+*/
 var listMake=function(config){
   var len,arr,i,item,conf;
   len=config.length;
