@@ -1,0 +1,15 @@
+{
+  "name": "graph",
+  "version": "0.0.1",
+  "description": "A CLI application to handle simple branching",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "graph"
+  ],
+  "author": "pav",
+  "license": "BSD-2-Clause"
+}
