@@ -11,8 +11,10 @@ stdin.on('data',function(chunk){
   chunks.push(chunk);
 });
 stdin.on('end',function(){
-  var json,config;
+  var json,config,list;
   json=chunks.join();
   config=JSON.parse(json);
+  list=items.listMake(config);
   stdout.write(util.format("%s \n",JSON.stringify(config[0])));
+  stdout.write(util.format("%s \n",JSON.stringify(list[1])));
 });
