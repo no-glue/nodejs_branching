@@ -1,6 +1,6 @@
 var items=require("./items.js"),
 util=require('util'),
-assert=require('assert');
+assert=require('assert'),
 stdin=process.stdin,
 stdout=process.stdout,
 chunks=[];
@@ -16,13 +16,7 @@ stdin.on('end',function(){
   json=chunks.join();
   config=JSON.parse(json);
   list=items.listMake(config);
-  describe("Branch",function(){
-    describe("Next",function(){
-      it("should return correct next for item 1", function(){
-        assert.equal(2,listNext(list,1,"nothing"));
-      });
-    });
-  });
+  assert.equal(2,items.listNext(list,1,"nothing"),"item 1 not correct");
   stdout.write(util.format("%s \n",JSON.stringify(config[0])));
   stdout.write(util.format("%s \n",JSON.stringify(list[1])));
 });
