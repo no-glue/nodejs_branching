@@ -1,5 +1,6 @@
 var items=require("./items.js"),
 util=require('util'),
+assert=require('assert');
 stdin=process.stdin,
 stdout=process.stdout,
 chunks=[];

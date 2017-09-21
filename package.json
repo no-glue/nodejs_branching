@@ -11,5 +11,8 @@
     "graph"
   ],
   "author": "pav",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "mocha": "~3.5.3"
+  }
 }
