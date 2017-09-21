@@ -12,7 +12,5 @@
   ],
   "author": "pav",
   "license": "BSD-2-Clause",
-  "devDependencies": {
-    "mocha": "~3.5.3"
-  }
+  "devDependencies": {}
 }
